@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent whole page from scrolling */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('b2.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+    color: #ffd700;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Scrollable container */
+.scroll-box {
+    width: 90%;
+    max-width: 375px; /* iPhone X screen width */
+    height: 80vh; /* Allows scrolling but keeps a nice view */
+    overflow-y: auto; /* Enable scrolling */
+    background: rgba(104, 19, 19, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(167, 3, 3, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+/* Hide scrollbar for better UI */
+.scroll-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background: #ffd700;
+    border-radius: 10px;
+}
+
+/* Video container */
+.video-container {
+    width: 100%;
+    border: 5px solid #ffd700;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+/* Text container */
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 6vw;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Make the slider fit within the scroll-box */
+.slider {
+    width: 100%; /* Make it fit inside the scroll-box */
+    height: 250px; /* Adjust height to match content */
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Adjust the slider list */
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+/* Make images fit inside the slider */
+.slider .list img {
+    width: 100%; /* Make the image fit inside the scroll-box */
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjust navigation buttons */
+.slider .buttons {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(252, 108, 64, 0.333);
+    color: #a59b15;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Adjust dots */
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #9c8418;
+    margin: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 200px; /* Adjust for smaller screens */
+    }
+}

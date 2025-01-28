@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+body {
+    background-color: #B22222;
+    color: #FFD700;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.outer-box {
+    background: rgba(255, 255, 255, 0.096);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(201, 139, 139, 0.5);
+}
+h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+h2 {
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+p {
+    font-size: 24px;
+}
+audio {
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+.outer-box {
+    padding: 15px;
+}
+.container {
+    padding: 10px;
+    max-width: 90%;
+}
+h1 {
+    font-size: 6vw; /* Slightly smaller on small screens */
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+h2 {
+    font-size: 5vw;
+}
+p {
+    font-size: 4vw;
+}
+}
+button {
+    padding: 10px 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    background-color: #FFD700;
+    color: #B22222;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #c79b23;
+}

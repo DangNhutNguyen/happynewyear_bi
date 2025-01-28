@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('b2.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+#countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+.countdown-part {
+    background: #ffd700;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 80px;
+    text-align: center;
+}
