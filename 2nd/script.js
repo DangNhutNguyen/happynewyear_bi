@@ -1,6 +1,6 @@
 
 function updateCountdown() {
-    const tet2025 = new Date('January 29, 2025 00:00:00').getTime();
+    const tet2025 = new Date('January 29, 2025 00:30:00').getTime();
     const now = new Date().getTime();
     const timeLeft = tet2025 - now;
     
